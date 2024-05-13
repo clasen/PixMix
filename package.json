@@ -1,0 +1,32 @@
+{
+  "name": "pixmix",
+  "version": "1.0.2",
+  "description": "🖼️ PixMix - An intuitive image composer.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clasen/PixMix.git"
+  },
+  "keywords": [
+    "pixmix",
+    "image",
+    "composer",
+    "text2image",
+    "ttf",
+    "font",
+    "overlay",
+    "svg",
+    "watermark",
+    "layer"
+  ],
+  "author": "Martin Clasen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clasen/PixMix/issues"
+  },
+  "homepage": "https://github.com/clasen/PixMix#readme",
+  "dependencies": {
+    "sharp": "^0.33.3",
+    "text-to-svg": "^3.1.5"
+  }
+}
