@@ -30,7 +30,7 @@ image.addText({
 await image.toFile('output.jpg');
 ```
 
-* Check de demo: https://github.com/clasen/PixMix/blob/master/demo/demo.js
+* Check de demo: https://github.com/clasen/PixMix/blob/master/demo
 
 ## 📚 API
 
