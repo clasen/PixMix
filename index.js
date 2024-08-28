@@ -1,15 +1,16 @@
 const sharp = require('sharp');
 const TextToSVG = require('text-to-svg');
+const path = require('path');
 
 class PixMix {
     constructor(sourceImagePath) {
-        this.sourceImagePath = sourceImagePath;
+        this.sourceImagePath = path.resolve(sourceImagePath);
         this.image = sharp(this.sourceImagePath);
         this.composites = [];
     }
 
     addText({ text, ttf, size, color, x, y, anchor = 'top left', letterSpacing = 0, lineHeight = 1.2 }) {
-        const textToSVG = TextToSVG.loadSync(ttf);
+        const textToSVG = TextToSVG.loadSync(path.resolve(ttf));
         const svgOptions = {
             fontSize: size,
             anchor: anchor,
@@ -29,13 +30,13 @@ class PixMix {
     }
 
     async addImage({ image, top, left }) {
-        const inputImage = await sharp(image).toBuffer();
+        const inputImage = await sharp(path.resolve(image)).toBuffer();
         const composite = { input: inputImage, top: top, left: left };
         this.composites.push(composite);
     }
 
     async toFile(outputImagePath) {
-        return this.image.composite(this.composites).toFile(outputImagePath);
+        return this.image.composite(this.composites).toFile(path.resolve(outputImagePath));
     }
 
     async toBuffer() {
