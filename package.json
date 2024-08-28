@@ -1,6 +1,6 @@
 {
   "name": "pixmix",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "🖼️ PixMix - An intuitive image composer.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,11 @@
     "overlay",
     "svg",
     "watermark",
-    "layer"
+    "layer",
+    "image processing",
+    "png",
+    "jpg",
+    "jpeg"
   ],
   "author": "Martin Clasen",
   "license": "MIT",
