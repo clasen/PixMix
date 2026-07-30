@@ -1,6 +1,6 @@
 {
   "name": "pixmix",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🖼️ PixMix - An intuitive image composer.",
   "main": "index.js",
   "repository": {
@@ -21,7 +21,8 @@
     "image processing",
     "png",
     "jpg",
-    "jpeg"
+    "jpeg",
+    "clasen"
   ],
   "author": "Martin Clasen",
   "license": "MIT",
@@ -30,7 +31,8 @@
   },
   "homepage": "https://github.com/clasen/PixMix#readme",
   "dependencies": {
-    "sharp": "^0.33.3",
+    "sharp": "^0.35.3",
     "text-to-svg": "^3.1.5"
-  }
+  },
+  "packageManager": "pnpm@11.9.0"
 }
